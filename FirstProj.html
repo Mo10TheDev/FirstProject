@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+  <title> Reborn </title> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="FirstProj.css">
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+</head>
+<body>
+  <div class="Header">
+     
+        <div class="buy-header header-item">buy</div>
+        <div class="sell-header header-item">sell</div>
+        <div class="charter-header header-item">charter</div>
+        <div class="manage-header header-item">manage</div>
+        <div class="build-header header-item">build</div>
+        <div class="crew-header header-item">crew</div>
+        <div class="future-header header-item">future</div>
+        <div class="about-header header-item">about</div>
+        <div class="news-header header-item">news</div>
+        <div class="contact-header header-item">contact</div>
+        <div class="search-btn-header header-item"> <button class="magnifying-glass">&#x1F50D;</button> </div>
+     
+  </div>
+  <div class="front-face">
+    <img class="front-face-img" src="Images/lambo.png">
+      <p class="front-face-title">Explore The Extraordinary</p> 
+      <p class="front-face-desc">Thinking about Buying, Selling , Or Perhaps Returning a Car? 
+        Here is the place for you
+      </p> 
+      <button class="front-face-btn"> Take a Journey &#8594;</button> 
+      <dotlottie-player class="downward-arrow-gif" src="https://lottie.host/2c68a7d5-bacc-43d5-b791-49e23ff31fe3/7mG1TZOdS6.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+  </div>
+
+  <div class="break-box">
+    <div class="buy-rent">
+    <button class="buy-btn"  onclick="buybtn()">Buy &nbsp;✓</button>
+    <button class="rent-btn" onclick="rentbtn()">Rent</button>
+    </div>
+    <div class="custom-select-wrapper">
+      <input type="text" class="custom-input" placeholder="Select a car" readonly>
+      <div class="custom-select-options">
+          <input type="text" class="search-input" placeholder="Search..." onkeyup="filterOptions()">
+      </div>
+  </div>
+    <div class="search-and-detailed">
+    <button>Search  &#8594;</button> 
+    <button>Detailed Search &#10552;</button>
+    </div>
+  </div>
+ <script src="FirstProj.js"></script>
+</body>
+</html>
