@@ -20,7 +20,7 @@
         <div class="about-header header-item">about</div>
         <div class="news-header header-item">news</div>
         <div class="contact-header header-item">contact</div>
-        <div class="search-btn-header header-item"> <button class="magnifying-glass">&#x1F50D;</button> </div>
+        <div class="search-btn-header header-item"><img src="Images/search.png" alt="Searchbtn"></div>
      
   </div>
   <div class="front-face">
@@ -39,16 +39,108 @@
     <button class="rent-btn" onclick="rentbtn()">Rent</button>
     </div>
     <div class="custom-select-wrapper">
-      <input type="text" class="custom-input" placeholder="Select a car" readonly>
-      <div class="custom-select-options">
-          <input type="text" class="search-input" placeholder="Search..." onkeyup="filterOptions()">
+       <input type="text" class="search-input" placeholder="Search...">
+    </div>
+    <div class="search-and-detailed-div">
+      <div class="search-and-detailed">
+      <button class="searchbtn-breakbox">Search  &#8594;</button> 
+      <button class="detailedsearchbtn-breakbox" onclick="showModal()">Detailed Search &#10552;</button>
       </div>
-  </div>
-    <div class="search-and-detailed">
-    <button>Search  &#8594;</button> 
-    <button>Detailed Search &#10552;</button>
     </div>
   </div>
+  <div class="advanced-search-div">
+    <div class="search-box">
+        <h2>Advanced Car Search</h2>
+        <div class="field-group">
+            <label for="make">Make</label>
+            <select id="make" name="make">
+                <option value="Any">Any</option>
+            </select>
+        </div>
+
+        <div class="field-group">
+            <label for="model">Model</label>
+            <select id="model" name="model">
+                <option value="Any">Any</option>
+            </select>
+        </div>
+
+        <div class="field-group">
+            <label for="year">Min-Year</label>
+            <select type="number" id="year" name="year" placeholder="e.g. 2020">
+                <option value="Any">Any</option>
+            </select>
+        </div>
+        <div>
+        <button onclick="syncYears()">SYNC</button>
+        </div>
+        <div class="field-group">
+        <label for="year">Max-Year</label>
+        <select type="number" id="yearMax" name="year" placeholder="e.g. 2020">
+            <option value="Any">Any</option>
+        </select>
+    </div>
+
+        <div class="double-field">
+            <div class="field-group">
+                <label for="min-price">Min Price</label>
+                <input type="number" id="min-price" name="min-price" placeholder="e.g. 5000">
+            </div>
+
+            <div class="field-group">
+                <label for="max-price">Max Price</label>
+                <input type="number" id="max-price" name="max-price" placeholder="e.g. 30000">
+            </div>
+        </div>
+
+        <div class="double-field">
+            <div class="field-group">
+                <label for="min-mileage">Min Mileage</label>
+                <input type="number" id="min-mileage" name="min-mileage" placeholder="e.g. 0">
+            </div>
+
+            <div class="field-group">
+                <label for="max-mileage">Max Mileage</label>
+                <input type="number" id="max-mileage" name="max-mileage" placeholder="e.g. 100000">
+            </div>
+        </div>
+
+        <div class="field-group">
+            <label for="transmission">Transmission</label>
+            <select id="transmission" name="transmission">
+                <option value="Any">Any</option>
+                <option value="automatic">Automatic</option>
+                <option value="manual">Manual</option>
+                <option value="cvt">CVT</option>
+            </select>
+        </div>
+
+        
+
+        <div class="field-group">
+            <label for="Color">Color</label>
+            <select id="color" name="Color">
+                <option value="Any">Any</option>
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+                <option value="Black">Black</option>
+            </select>
+        </div>
+
+        <div class="field-group" style="flex-basis: 100%;">
+            <button class="searchbtn-adv" type="submit">Search</button>
+        </div>
+    </div>
+</div>    
+
+   
+  <div class="car-grid">
+   
+    
+  </div>
+  <script src="all-cars.js"></script>
+
  <script src="FirstProj.js"></script>
 </body>
 </html>
